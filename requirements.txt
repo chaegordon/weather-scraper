@@ -1,0 +1,8 @@
+pytest==8.1.1
+jupyter==1.0.0
+requests==2.32.3
+environs==11.0.0
+scrapy==2.11.2
+psycopg2-binary==2.9.9
+pandas==2.2.2
+matplotlib==3.9.2

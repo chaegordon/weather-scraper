@@ -1,0 +1,7 @@
+**/*.pyc
+**/*.pyi
+**/*.pyx
+**/__pycache__
+*.log
+*.env
+.DS_Store

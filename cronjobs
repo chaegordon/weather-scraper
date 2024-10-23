@@ -1,0 +1,7 @@
+# Run the scraper script every hour using Poetry
+0 * * * * cd /app/tomorrow && /root/.local/bin/poetry run python /app/tomorrow/__main__.py >> /app/logs/cron.log 2>&1
+# test cron is running, overwrite the previous log to not fill up the disk
+* * * * * echo "Cron job is running at $(date)" > /app/logs/cron_test.log
+* * * * * /root/.local/bin/poetry --version > /app/logs/cron_poetry_test.log 2>&1
+
+
